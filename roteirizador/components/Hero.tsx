@@ -1,7 +1,7 @@
 
 import React from 'react';
 import LeadForm from './LeadForm';
-import heroVideo from './assets/hero-video (1).mp4'; 
+
 
 const Hero: React.FC = () => {
   return (
@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
           className="w-full h-full object-cover"
         >
           {/* AQUI: Usamos a variável {heroVideo} que importamos lá em cima */}
-          <source src={heroVideo} type="video/mp4" />
+          <source src="/hero-video.mp4" type="video/mp4" />
         </video>
       </div>
 
