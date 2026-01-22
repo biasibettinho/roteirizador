@@ -1,6 +1,7 @@
 
 import React from 'react';
 import LeadForm from './LeadForm';
+import heroVideo from './assets/hero-video (1).mp4'; 
 
 const Hero: React.FC = () => {
   return (
@@ -8,16 +9,18 @@ const Hero: React.FC = () => {
       {/* Video Background - Alta qualidade: Caminhão em estrada sinuosa */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-via-dark/75 z-10"></div>
-        <video
+                <video
           autoPlay
           loop
           muted
           playsInline
           className="w-full h-full object-cover"
         >
-          <source src="https://player.vimeo.com/external/494163967.sd.mp4?s=6a9718429b6e82813583d73919e83693e50669e1&profile_id=165&oauth2_token_id=57447761" type="video/mp4" />
+          {/* AQUI: Usamos a variável {heroVideo} que importamos lá em cima */}
+          <source src={heroVideo} type="video/mp4" />
         </video>
       </div>
+
       
       <div className="container mx-auto px-6 relative z-20">
         <div className="flex flex-col lg:flex-row items-center gap-12">
