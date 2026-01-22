@@ -1,7 +1,7 @@
 
 import React from 'react';
 import LeadForm from './LeadForm';
-
+import heroVideo from '../assets/hero-video.mp4'; 
 
 const Hero: React.FC = () => {
   return (
