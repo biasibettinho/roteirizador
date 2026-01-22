@@ -36,9 +36,7 @@ const Hero: React.FC = () => {
           <div className="lg:w-1/2 relative fade-in" style={{ animationDelay: '0.2s' }}>
             <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-8 border-white">
               <img 
-                src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?q=80&w=1200&auto=format&fit=crop" 
-                alt="Logística e tecnologia" 
-                className="w-full h-auto object-cover"
+                src="assets/roteirizador.png"
               />
               <div className="absolute inset-0 bg-via-blue/10 mix-blend-multiply"></div>
             </div>
