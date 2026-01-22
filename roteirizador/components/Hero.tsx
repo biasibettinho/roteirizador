@@ -1,14 +1,12 @@
+
 import React from 'react';
 import LeadForm from './LeadForm';
-// Importação do vídeo local
-import heroVideo from '../assets/hero-video (1).mp4';
 
 const Hero: React.FC = () => {
   return (
     <section className="relative min-h-screen flex items-center pt-24 pb-12 overflow-hidden">
-      {/* Video Background - Atualizado para arquivo local */}
+      {/* Video Background - Alta qualidade: Caminhão em estrada sinuosa */}
       <div className="absolute inset-0 z-0">
-        {/* Mantive o overlay original bg-via-dark/75 */}
         <div className="absolute inset-0 bg-via-dark/75 z-10"></div>
         <video
           autoPlay
@@ -17,8 +15,7 @@ const Hero: React.FC = () => {
           playsInline
           className="w-full h-full object-cover"
         >
-          {/* Troca da URL do Vimeo pela variável do vídeo local */}
-          <source src={heroVideo} type="video/mp4" />
+          <source src="https://player.vimeo.com/external/494163967.sd.mp4?s=6a9718429b6e82813583d73919e83693e50669e1&profile_id=165&oauth2_token_id=57447761" type="video/mp4" />
         </video>
       </div>
       
@@ -48,4 +45,3 @@ const Hero: React.FC = () => {
 };
 
 export default Hero;
-

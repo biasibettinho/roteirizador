@@ -6,7 +6,6 @@ import Concept from './components/Concept';
 import Benefits from './components/Benefits';
 import HowItWorks from './components/HowItWorks';
 import Credibility from './components/Credibility';
-import LeadForm from './components/LeadForm';
 import Footer from './components/Footer';
 
 function App() {
@@ -19,7 +18,6 @@ function App() {
         <Benefits />
         <HowItWorks />
         <Credibility />
-        <LeadForm />
       </main>
       <Footer />
     </div>

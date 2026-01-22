@@ -33,7 +33,6 @@ const Header: React.FC = () => {
       }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
-        {/* Logo and Nav Menu Grouped for centralized feel */}
         <div className="flex items-center gap-10">
           <img 
             src={LOGO_URL} 
@@ -55,13 +54,8 @@ const Header: React.FC = () => {
           </nav>
         </div>
         
-        {/* Right side CTA */}
-        <button 
-          onClick={() => scrollToSection('conversion-form')}
-          className="bg-white text-via-blue border border-via-blue/30 px-6 py-2 rounded-full font-bold text-[13px] tracking-wider hover:bg-via-blue hover:text-white transition-all duration-300 shadow-sm"
-        >
-          TENHO INTERESSE
-        </button>
+        {/* O botão de CTA foi removido daqui conforme solicitado */}
+        <div className="flex-grow"></div>
       </div>
     </header>
   );
