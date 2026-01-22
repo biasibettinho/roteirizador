@@ -128,7 +128,7 @@ const LeadForm: React.FC = () => {
                       : 'bg-via-blue hover:bg-via-dark hover:scale-[1.02] shadow-via-blue/20'
                   }`}
                 >
-                  {isSubmitting ? 'Enviando...' : 'Enviar interesse'}
+                  {isSubmitting ? 'Enviando...' : 'Enviar Solicitação'}
                 </button>
               </form>
             )}

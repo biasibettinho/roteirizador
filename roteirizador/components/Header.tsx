@@ -13,24 +13,54 @@ const Header: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollToForm = () => {
-    document.getElementById('conversion-form')?.scrollIntoView({ behavior: 'smooth' });
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
   };
+
+  const navLinks = [
+    { name: 'O QUE É', id: 'concept' },
+    { name: 'BENEFÍCIOS', id: 'benefits' },
+    { name: 'COMO FUNCIONA', id: 'how-it-works' },
+  ];
 
   return (
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-5'
+        isScrolled ? 'bg-white shadow-md py-3' : 'bg-white/90 backdrop-blur-sm py-4'
       }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
-        <img src={LOGO_URL} alt="VIA Group" className="h-10 md:h-12 w-auto" />
+        {/* Logo and Nav Menu Grouped for centralized feel */}
+        <div className="flex items-center gap-10">
+          <img 
+            src={LOGO_URL} 
+            alt="VIA Group" 
+            className="h-10 md:h-12 w-auto cursor-pointer" 
+            onClick={() => window.location.href = 'https://viagroup.com.br/'} 
+          />
+          
+          <nav className="hidden xl:flex items-center gap-1">
+            {navLinks.map((link) => (
+              <button
+                key={link.id}
+                onClick={() => scrollToSection(link.id)}
+                className="px-5 py-2 text-[#4a4a4a] text-[13px] font-bold tracking-wider rounded-full hover:bg-via-blue hover:text-white transition-all duration-300"
+              >
+                {link.name}
+              </button>
+            ))}
+          </nav>
+        </div>
         
+        {/* Right side CTA */}
         <button 
-          onClick={scrollToForm}
-          className="bg-white text-via-blue border border-via-blue/20 px-6 py-2 rounded-full font-semibold text-sm md:text-base hover:bg-via-blue hover:text-white transition-all duration-300 shadow-sm"
+          onClick={() => scrollToSection('conversion-form')}
+          className="bg-white text-via-blue border border-via-blue/30 px-6 py-2 rounded-full font-bold text-[13px] tracking-wider hover:bg-via-blue hover:text-white transition-all duration-300 shadow-sm"
         >
-          Tenho interesse
+          TENHO INTERESSE
         </button>
       </div>
     </header>

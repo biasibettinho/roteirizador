@@ -34,7 +34,7 @@ const HowItWorks: React.FC = () => {
   ];
 
   return (
-    <section className="py-24 bg-via-gray overflow-hidden">
+    <section id="how-it-works" className="py-24 bg-via-gray overflow-hidden scroll-mt-20">
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
           <div className="lg:w-1/2">

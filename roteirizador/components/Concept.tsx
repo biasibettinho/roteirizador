@@ -3,7 +3,7 @@ import React from 'react';
 
 const Concept: React.FC = () => {
   return (
-    <section className="py-24 bg-via-gray border-y border-slate-100">
+    <section id="concept" className="py-24 bg-via-gray border-y border-slate-100 scroll-mt-20">
       <div className="container mx-auto px-6 max-w-4xl text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-via-dark mb-10">
           O que é o Roteirizador VIA Group?
