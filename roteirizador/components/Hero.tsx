@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
           className="w-full h-full object-cover"
         >
           {/* AQUI: Usamos a variável {heroVideo} que importamos lá em cima */}
-          <source src="/hero-video.mp4" type="video/mp4" />
+          <source src={heroVideo} type="video/mp4" />
         </video>
       </div>
 
