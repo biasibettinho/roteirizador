@@ -54,7 +54,7 @@ const HowItWorks: React.FC = () => {
           <div className="lg:w-1/2">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1200&auto=format&fit=crop" 
+                src="assets/roteirizador.jpg" 
                 alt="Operação logística" 
                 className="w-full h-full object-cover aspect-video lg:aspect-square"
               />
