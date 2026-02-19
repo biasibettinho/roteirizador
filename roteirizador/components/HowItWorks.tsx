@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { StepProps } from '../types';
+import roteirizadorImg from '../assets/roteirizador.jpg';
 
 const Step: React.FC<StepProps> = ({ number, title, description }) => (
   <div className="flex flex-col md:flex-row items-start gap-6 md:gap-10">
@@ -54,7 +55,7 @@ const HowItWorks: React.FC = () => {
           <div className="lg:w-1/2">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <img 
-                src="assets/roteirizador.jpg" 
+                src={roteirizadorImg}
                 alt="Operação logística" 
                 className="w-full h-full object-cover aspect-video lg:aspect-square"
               />
